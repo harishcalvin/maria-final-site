@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria-Auxilium-School</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="" id="logo1">Maria Auxilium School</a></div>
+        <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="/home.htm">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Campus life +</label>
+                <a href="#">Campus life</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">NSS / NCC</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Celebration</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Admission +</label>
+                <a href="#">Admission</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="/admission.htm">Application Form</a></li>
+                    <li><a href="#">Announcement</a></li>
+                    <li><a href="#">Instruction</a></li>
+                    <!--
+<li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+<li><a href="#">Submenu-1</a></li>
+<li><a href="#">Submenu-2</a></li>
+<li><a href="#">Submenu-3</a></li>
+</ul>
+</li>
+-->
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Group Institiuions +</label>
+                <a href="#">Group Institiuions</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="#">Primary School</a></li>
+                    <li><a href="#">Children Home</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.htm">About us</a></li>
+            <li><a href="/contact.htm">Contact us</a></li>
+            <li>
+                <label for="btn-4" class="show">Login +</label>
+                <a href="#">Login</a>
+                <input type="checkbox" id="btn-4">
+                <ul>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+
+    </div>
+    <script>
+        $('.icon').click(function() {
+            $('span').toggleClass("cancel");
+        });
+    </script>
+    <!-- Images source -->
+    <main>
+        <div class="slideshowContainer">
+
+
+            <img class="imageSlides" src="/assets/front image.png">
+            <img class="imageSlides" src="/assets/students praying.png" alt="leaf on the ground">
+            <img class="imageSlides" src="/assets/teachers.JPG" alt="lake surrounded by mountains">
+            <img class="imageSlides" src="/assets/students.JPG" alt="image">
+
+            <!-- left and right arrows -->
+            <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+            <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+
+            <div class="slideshowCircles">
+                <!-- dots -->
+                <span class="circle dot"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+
+        </div>
+
+    </main>
+    <!--- notice board --->
+    <div id="nbcontainer">
+        <div class="nbbackground">
+            <h2 class="nboard">Notice Board</h2>
+        </div>
+        <div id="scrolling-wrapper">
+            <table id="scrolling-table">
+            </table>
+        </div>
+    </div>
+    <!----- Notice board ends here --->
+    <!-- Online Events starts here ---->
+    <section class="onlineblock">
+        <p class="onlineEventsBlock">Online Activites</p>
+        <div class="flex flex-wrap -m-3">
+
+            <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <div class="bg-cover h-48" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png);"></div>
+                    <div class="p-4 flex-1 flex flex-col" style="">
+                        <h3 class="mb-4 text-2xl">Online Classes & Tests</h3>
+                        <div class="mb-4 text-grey-darker text-sm flex-1">
+                            <p>Our vision is to encourage students in developing and discovering their talents at early stage.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- second one-->
+            <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1511084901824-1c57f5a16c98?w=900);"></div>
+                    <div class="p-4 flex-1 flex flex-col" style="
+  ">
+                        <h3 class="mb-4 text-2xl">Personal Development</h3>
+                        <div class="mb-4 text-grey-darker text-sm flex-1">
+                            <p>Our vision is to encourage students in developing and discovering their talents at early stage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Three--->
+            <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <div class="bg-cover h-48" style="background: url(/Images/maria\ parents\ meeting\ poster\ 1.png);">
+                        <a href="https://youtu.be/FEf7KhOVvQ8" target="_blank"> <img src="/assets/pg poster.png" alt=""> </a>
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col" style="
+  ">
+                        <h3 class="mb-4 text-2xl">Parents Meeting</h3>
+                        <div class="mb-4 text-grey-darker text-sm flex-1">
+                            <p>Our vision is to encourage students in developing and discovering their talents at early stage.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---- Online Events ends here-->
+    <!---- Alumni block starts here -->
+    <main class="alumniblock">
+        <p class="alumniTestimonials">Alumni Experiences</p>
+        <div id="alumni-test-list">
+            <section id="secalumni">
+                <div class="alumni-top-box"></div>
+                <img id="alumniimg" src="/assets/alu 1 pavithra.jpeg" alt="">
+                <div class="alumni-bottom-box">
+                    <blockquote id="alumniblockquote">
+                        <p class="alumnitexts">I dfgdfgdfgdg love this school so much, cause It’s my foundation where i got motivated to became where I’m now happily living my life.</p>
+                    </blockquote>
+                    <div class="alumni-test-details">
+                        <p class="alumnitexts"><span id="alumnispan">D Pavithra (B.A, B.L) </span><br>Batch: 2009 - 2011</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="secalumni">
+                <div class="alumni-top-box"></div>
+                <img id="alumniimg" src="/assets/alu 2 vaidesswari.jpeg" alt="Picture of Josie Anderson">
+                <div class="alumni-bottom-box">
+
+                    <blockquote id="alumniblockquote">
+                        <p class="alumnitexts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    </blockquote>
+                    <div class="alumni-test-details">
+                        <p class="alumnitexts"><span id="alumnispan">Vaideeswari (B.sc Maths)</span><br> Batch 2007 - 2014</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="secalumni">
+                <div class="alumni-top-box"></div>
+                <img id="alumniimg" src="/assets/alu 3 priyadarshini.jpeg" alt="Picture of Jenny Smith">
+                <div class="alumni-bottom-box">
+                    <blockquote id="alumniblockquote">
+                        <p class="alumnitexts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    </blockquote>
+                    <div class="alumni-test-details">
+                        <p class="alumnitexts"><span id="alumnispan">B. Priyadarshini (B.P.Ed)</span ><br>Batch 2002 - 2003</p>
+          </div>
+       </div>
+      </section>
+      
+    </div>
+  </main>
+<!---- Alumni block Ends here -->
+<!--- Footer Starts Here  --->
+<section class="mainfooter">
+    <div class="footer">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-widget">
+                          <h2>Get in Touch</h2>
+                          <div class="contact-info">
+                              <p><i class="fa fa-map-marker"></i>81, Kamarajar St, Ennaikaran, Kanchipuram
+  ,Tamil Nadu 631501.</p>
+                              <p><i class="fa fa-envelope"></i>contact@maria.com</p>
+                              <p><i class="fa fa-phone"></i>123-456-7890</p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-widget">
+                          <h2>Follow Us</h2>
+                          <div class="contact-info">
+                              <div class="social">
+                                  <a href="https://twitter.com/SchoolAuxilium" target="_blank"><i class="fab fa-twitter"></i></a>
+                                  <a href="https://www.facebook.com/maria.auxilium.79/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                  <a href="https://www.instagram.com/mariaauxiliumschool/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                  <a href="https://www.youtube.com/channel/UCdHH-L2NdF6cD4mWAG8a4nA/featured?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-widget">
+                          <h2></h2>
+                          <ul>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="#">Carrers</a></li>
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-widget">
+                          <h2></h2>
+                          <ul>
+                              <li><a href="#">Application Form</a></li>
+                              <li><a href="#">Celebration</a></li>
+                              <li><a href="#">Gallery</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              
+              </div>
+  
+  
+          </div>
+      </div>
+    <!--bottom footer--->
+    <div class="footer-bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 copyright">
+                      <p>Copyright &copy; <a href=""></a> 2020 All Rights Reserved</p>
+                  </div>
+  
+                  <div class="col-md-6 powered-by">
+                      <p>Digital Transformation Powered by <a href="#">Techibeat.com</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+<!--- Footer Ends Here ---->
+
+
+  <script src="file.js"></script>
+
+  </body>
+</html>
